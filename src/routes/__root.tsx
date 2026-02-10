@@ -270,6 +270,16 @@ function RootDocument({ children }: { children: React.ReactNode }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        {/* Plausible Analytics - privacy-friendly, no cookies */}
+        <script
+          async
+          src="https://plausible.io/js/pa-XJag0qxDyQMHn2tOpVCvA.js"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()`,
+          }}
+        />
       </head>
       <body className="bg-neutral-950">
         {children}
