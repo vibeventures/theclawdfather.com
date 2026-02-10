@@ -71,6 +71,9 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
           content: locale === 'de' ? 'en_US' : 'de_DE',
         },
         { property: 'og:site_name', content: 'The Clawdfather' },
+        { property: 'og:image', content: `${SITE_URL}/android-chrome-512x512.png` },
+        { property: 'og:image:width', content: '512' },
+        { property: 'og:image:height', content: '512' },
 
         // Twitter
         { name: 'twitter:card', content: 'summary_large_image' },
@@ -78,6 +81,7 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
         { name: 'twitter:creator', content: '@peetzweg' },
         { name: 'twitter:title', content: title },
         { name: 'twitter:description', content: description },
+        { name: 'twitter:image', content: `${SITE_URL}/android-chrome-512x512.png` },
       ],
       links: [
         { rel: 'stylesheet', href: appCss },
@@ -90,9 +94,13 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
         { rel: 'preconnect', href: 'https://cal.com' },
         { rel: 'dns-prefetch', href: 'https://cal.com' },
 
-        // Icon hints
-        { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
-        { rel: 'apple-touch-icon', href: '/favicon.ico' },
+        // Favicons
+        { rel: 'icon', href: '/favicon.ico', sizes: '32x32' },
+        { rel: 'icon', href: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+        { rel: 'icon', href: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+        { rel: 'icon', href: '/logo.svg', type: 'image/svg+xml' },
+        { rel: 'apple-touch-icon', href: '/apple-touch-icon.png', sizes: '180x180' },
+        { rel: 'manifest', href: '/manifest.json' },
       ],
     }
   },
