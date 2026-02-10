@@ -71,9 +71,10 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
           content: locale === 'de' ? 'en_US' : 'de_DE',
         },
         { property: 'og:site_name', content: 'The Clawdfather' },
-        { property: 'og:image', content: `${SITE_URL}/android-chrome-512x512.png` },
-        { property: 'og:image:width', content: '512' },
-        { property: 'og:image:height', content: '512' },
+        { property: 'og:image', content: `${SITE_URL}/og-image.png` },
+        { property: 'og:image:width', content: '1200' },
+        { property: 'og:image:height', content: '630' },
+        { property: 'og:image:type', content: 'image/png' },
 
         // Twitter
         { name: 'twitter:card', content: 'summary_large_image' },
@@ -81,7 +82,7 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
         { name: 'twitter:creator', content: '@peetzweg' },
         { name: 'twitter:title', content: title },
         { name: 'twitter:description', content: description },
-        { name: 'twitter:image', content: `${SITE_URL}/android-chrome-512x512.png` },
+        { name: 'twitter:image', content: `${SITE_URL}/twitter-image.png` },
       ],
       links: [
         { rel: 'stylesheet', href: appCss },
@@ -123,7 +124,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         name: 'Philip Poloczek',
         alternateName: ['peetzweg', 'The Clawdfather'],
         url: SITE_URL,
-        image: `${SITE_URL}/favicon.ico`,
+        image: `${SITE_URL}/og-image.png`,
         sameAs: [
           'https://x.com/peetzweg',
           'https://github.com/peetzweg',
@@ -154,7 +155,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
           : 'Agent Consulting from the heart of Germany for the EU. OpenClaw installation, consulting, training, and talks.',
         url: SITE_URL,
         logo: `${SITE_URL}/favicon.ico`,
-        image: `${SITE_URL}/favicon.ico`,
+        image: `${SITE_URL}/og-image.png`,
         telephone: '',
         email: 'contact@theclawdfather.com',
         priceRange: '€€€',
