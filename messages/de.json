@@ -1,9 +1,21 @@
 {
   "$schema": "https://inlang.com/schema/inlang-message-format",
-  "home_page": "Startseite",
-  "about_page": "Über uns",
-  "example_message": "Willkommen in deiner i18n-App.",
+  "site_title": "The Clawdfather - Agent Consulting",
+  "site_description": "Agent Consulting aus dem Herzen Deutschlands für die EU. OpenClaw Experte und Contributor aus Berlin.",
+  "hero_tagline": "Agent Consulting aus dem Herzen Deutschlands für die EU",
+  "hero_bio": "Ich bin Philip, OpenClaw Contributor und Agent-Spezialist aus Berlin. Ich helfe Unternehmen dabei, AI Agents effektiv einzusetzen.",
+  "cta_book": "Termin buchen",
+  "cta_book_short": "Buchen",
+  "services_title": "Leistungen",
+  "service_installation": "OpenClaw Installation",
+  "service_installation_desc": "Setup, Konfiguration und Deployment von OpenClaw für Ihr Team.",
+  "service_consulting": "Beratung",
+  "service_consulting_desc": "Architektur, Strategie und Best Practices für Agent-Systeme.",
+  "service_training": "Training",
+  "service_training_desc": "Workshops und Onboarding für Ihr Team.",
+  "service_talks": "Vorträge",
+  "service_talks_desc": "Konferenz-Talks und Firmenvorträge über AI Agents.",
   "language_label": "Sprache",
-  "current_locale": "Aktuelle Sprache: {locale}",
-  "learn_router": "Paraglide JS lernen"
+  "footer_impressum": "Impressum",
+  "footer_privacy": "Datenschutz"
 }
