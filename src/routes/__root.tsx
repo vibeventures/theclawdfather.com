@@ -217,7 +217,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
                 '@type': 'Service',
                 name: isDE ? 'Vorträge' : 'Talks',
                 description: isDE
-                  ? 'Konferenz-Talks und Firmenvorträge über KI Agents'
+                  ? 'Konferenz-Talks und Firmenvorträge über KI Agenten'
                   : 'Conference talks and company presentations about AI agents',
               },
             },
@@ -250,7 +250,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
             acceptedAnswer: {
               '@type': 'Answer',
               text: isDE
-                ? 'OpenClaw ist ein Open-Source-Framework für KI Agents, das die Entwicklung und den Betrieb von autonomen KI-Systemen vereinfacht.'
+                ? 'OpenClaw ist ein Open-Source-Framework für KI Agenten, das die Entwicklung und den Betrieb von autonomen KI-Systemen vereinfacht.'
                 : 'OpenClaw is an open-source framework for AI agents that simplifies the development and operation of autonomous AI systems.',
             },
           },
@@ -262,7 +262,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
             acceptedAnswer: {
               '@type': 'Answer',
               text: isDE
-                ? 'Unternehmen jeder Größe, die KI Agents für Automatisierung, Kundenservice, interne Prozesse oder Produktentwicklung einsetzen möchten.'
+                ? 'Unternehmen jeder Größe, die KI Agenten für Automatisierung, Kundenservice, interne Prozesse oder Produktentwicklung einsetzen möchten.'
                 : 'Companies of any size looking to deploy AI agents for automation, customer service, internal processes, or product development.',
             },
           },
