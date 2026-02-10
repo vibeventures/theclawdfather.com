@@ -45,7 +45,7 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
           name: 'keywords',
           content:
             locale === 'de'
-              ? 'AI Agent Consulting, OpenClaw, KI Beratung, Berlin, Agent Entwicklung, LLM Integration, AI Automation'
+              ? 'KI Agent Consulting, OpenClaw, KI Beratung, Berlin, Agent Entwicklung, LLM Integration, KI Automation'
               : 'AI Agent Consulting, OpenClaw, AI Consulting, Berlin, Agent Development, LLM Integration, AI Automation',
         },
 
@@ -217,7 +217,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
                 '@type': 'Service',
                 name: isDE ? 'Vorträge' : 'Talks',
                 description: isDE
-                  ? 'Konferenz-Talks und Firmenvorträge über AI Agents'
+                  ? 'Konferenz-Talks und Firmenvorträge über KI Agents'
                   : 'Conference talks and company presentations about AI agents',
               },
             },
@@ -250,7 +250,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
             acceptedAnswer: {
               '@type': 'Answer',
               text: isDE
-                ? 'OpenClaw ist ein Open-Source-Framework für AI Agents, das die Entwicklung und den Betrieb von autonomen KI-Systemen vereinfacht.'
+                ? 'OpenClaw ist ein Open-Source-Framework für KI Agents, das die Entwicklung und den Betrieb von autonomen KI-Systemen vereinfacht.'
                 : 'OpenClaw is an open-source framework for AI agents that simplifies the development and operation of autonomous AI systems.',
             },
           },
@@ -262,7 +262,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
             acceptedAnswer: {
               '@type': 'Answer',
               text: isDE
-                ? 'Unternehmen jeder Größe, die AI Agents für Automatisierung, Kundenservice, interne Prozesse oder Produktentwicklung einsetzen möchten.'
+                ? 'Unternehmen jeder Größe, die KI Agents für Automatisierung, Kundenservice, interne Prozesse oder Produktentwicklung einsetzen möchten.'
                 : 'Companies of any size looking to deploy AI agents for automation, customer service, internal processes, or product development.',
             },
           },
