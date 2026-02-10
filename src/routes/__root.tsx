@@ -71,10 +71,10 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
           content: locale === 'de' ? 'en_US' : 'de_DE',
         },
         { property: 'og:site_name', content: 'The Clawdfather' },
-        { property: 'og:image', content: `${SITE_URL}/og-image.png` },
+        { property: 'og:image', content: `${SITE_URL}/og-image.jpg` },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
-        { property: 'og:image:type', content: 'image/png' },
+        { property: 'og:image:type', content: 'image/jpeg' },
 
         // Twitter
         { name: 'twitter:card', content: 'summary_large_image' },
@@ -82,7 +82,7 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
         { name: 'twitter:creator', content: '@peetzweg' },
         { name: 'twitter:title', content: title },
         { name: 'twitter:description', content: description },
-        { name: 'twitter:image', content: `${SITE_URL}/twitter-image.png` },
+        { name: 'twitter:image', content: `${SITE_URL}/twitter-image.jpg` },
       ],
       links: [
         { rel: 'stylesheet', href: appCss },
@@ -97,8 +97,8 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
 
         // Favicons
         { rel: 'icon', href: '/favicon.ico', sizes: '32x32' },
-        { rel: 'icon', href: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-        { rel: 'icon', href: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+        { rel: 'icon', href: '/favicon-16x16.png', sizes: '16x16', type: 'image/jpeg' },
+        { rel: 'icon', href: '/favicon-32x32.png', sizes: '32x32', type: 'image/jpeg' },
         { rel: 'icon', href: '/logo.svg', type: 'image/svg+xml' },
         { rel: 'apple-touch-icon', href: '/apple-touch-icon.png', sizes: '180x180' },
         { rel: 'manifest', href: '/manifest.json' },
@@ -124,7 +124,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         name: 'Philip Poloczek',
         alternateName: ['peetzweg', 'The Clawdfather'],
         url: SITE_URL,
-        image: `${SITE_URL}/og-image.png`,
+        image: `${SITE_URL}/og-image.jpg`,
         sameAs: [
           'https://x.com/peetzweg',
           'https://github.com/peetzweg',
@@ -155,7 +155,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
           : 'Agent Consulting from the heart of Germany for the EU. OpenClaw installation, consulting, training, and talks.',
         url: SITE_URL,
         logo: `${SITE_URL}/favicon.ico`,
-        image: `${SITE_URL}/og-image.png`,
+        image: `${SITE_URL}/og-image.jpg`,
         telephone: '',
         email: 'contact@theclawdfather.com',
         priceRange: '€€€',
