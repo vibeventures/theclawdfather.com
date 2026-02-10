@@ -1,7 +1,8 @@
 import { createFileRoute } from '@tanstack/react-router'
-import { Github, Linkedin, Twitter, Calendar } from 'lucide-react'
+import { Github, Linkedin, Calendar } from 'lucide-react'
 import * as m from '@/paraglide/messages'
 import { LocaleSwitcher } from '@/components/LocaleSwitcher'
+import { XIcon } from '@/components/icons/XIcon'
 
 export const Route = createFileRoute('/')({
   component: Home,
@@ -17,7 +18,7 @@ const CAL_LINK =
   'https://cal.com/peetzweg/50min?user=peetzweg&overlayCalendar=true'
 
 const socials = [
-  { icon: Twitter, href: 'https://x.com/peetzweg', label: 'X (Twitter)' },
+  { icon: XIcon, href: 'https://x.com/peetzweg', label: 'X' },
   { icon: Github, href: 'https://github.com/peetzweg', label: 'GitHub' },
   {
     icon: Linkedin,
@@ -40,6 +41,13 @@ function Home() {
         {/* Hero */}
         <article itemScope itemType="https://schema.org/Person">
           <section className="mb-16" aria-labelledby="hero-title">
+            {/* Logo */}
+            <img
+              src="/logo.svg"
+              alt=""
+              aria-hidden="true"
+              className="w-12 h-12 mb-6"
+            />
             <h1
               id="hero-title"
               className="text-3xl md:text-4xl font-bold tracking-tight mb-4"
