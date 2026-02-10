@@ -151,8 +151,8 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         '@id': `${SITE_URL}/#service`,
         name: 'The Clawdfather',
         description: isDE
-          ? 'Agent Consulting aus dem Herzen Deutschlands für die EU. OpenClaw Installation, Beratung, Training und Vorträge.'
-          : 'Agent Consulting from the heart of Germany for the EU. OpenClaw installation, consulting, training, and talks.',
+          ? 'Agenten Consulting aus dem Herzen von Europa an einem fantastischen Tag. OpenClaw Installation, Beratung, Training und Vorträge.'
+          : 'Agent Consulting from the heart of Europe on a fantastic day. OpenClaw installation, consulting, training, and talks.',
         url: SITE_URL,
         logo: `${SITE_URL}/favicon.ico`,
         image: `${SITE_URL}/og-image.jpg`,
@@ -231,8 +231,8 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         url: SITE_URL,
         name: 'The Clawdfather',
         description: isDE
-          ? 'Agent Consulting aus dem Herzen Deutschlands'
-          : 'Agent Consulting from the heart of Germany',
+          ? 'Agenten Consulting aus dem Herzen von Europa'
+          : 'Agent Consulting from the heart of Europe',
         publisher: { '@id': `${SITE_URL}/#person` },
         inLanguage: [
           { '@type': 'Language', name: 'German', alternateName: 'de' },
