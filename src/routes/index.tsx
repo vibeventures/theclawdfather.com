@@ -138,6 +138,34 @@ function Home() {
           </ul>
         </section>
 
+        {/* News */}
+        <section aria-labelledby="news-title" className="mt-16">
+          <h2
+            id="news-title"
+            className="text-sm font-medium text-neutral-500 uppercase tracking-wider mb-6"
+          >
+            {m.news_title()}
+          </h2>
+          <ul className="space-y-4" role="list">
+            <li className="group">
+              <a
+                href="https://lu.ma/3j4om77u"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block p-4 -mx-4 rounded-lg hover:bg-neutral-900 transition-colors"
+              >
+                <time className="text-sm text-neutral-500">8. Feb 2026</time>
+                <h3 className="text-neutral-100 font-medium mt-1">
+                  OpenClaw Berlin Meetup
+                </h3>
+                <p className="text-neutral-400 text-sm mt-1">
+                  Erstes Community-Treffen in Berlin →
+                </p>
+              </a>
+            </li>
+          </ul>
+        </section>
+
         {/* Footer */}
         <footer
           className="mt-24 pt-8 border-t border-neutral-800"
