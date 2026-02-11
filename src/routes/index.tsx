@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { createFileRoute } from '@tanstack/react-router'
 import { Github, Linkedin, Calendar } from 'lucide-react'
-import { AnimatePresence, motion } from 'framer-motion'
+import { AnimatePresence, motion } from 'motion/react'
 import * as m from '@/paraglide/messages'
 import { LocaleSwitcher } from '@/components/LocaleSwitcher'
 import { XIcon } from '@/components/icons/XIcon'
