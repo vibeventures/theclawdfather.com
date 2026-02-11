@@ -23,7 +23,7 @@ export function ViewToggle({ isAgent, onToggle }: ViewToggleProps) {
         <div className="relative flex items-center bg-neutral-800 rounded-full p-1">
           <motion.div
             className="absolute h-6 w-6 bg-neutral-100 rounded-full"
-            animate={{ x: isAgent ? 28 : 0 }}
+            animate={{ x: isAgent ? 24 : 0 }}
             transition={{ type: 'spring', stiffness: 500, damping: 30 }}
           />
           <div
