@@ -7,6 +7,7 @@ import { AnimatePresence, motion } from 'motion/react'
 import * as m from '@/paraglide/messages'
 import { LocaleSwitcher } from '@/components/LocaleSwitcher'
 import { XIcon } from '@/components/icons/XIcon'
+import { Offerings } from '@/components/Offerings'
 import { ViewToggle } from '@/components/ViewToggle'
 import { AgentView } from '@/components/AgentView'
 
@@ -138,8 +139,11 @@ function HumanView() {
           </section>
         </article>
 
+        {/* Offerings */}
+        <Offerings />
+
         {/* Services */}
-        <section aria-labelledby="services-title">
+        <section aria-labelledby="services-title" className="mt-16">
           <h2
             id="services-title"
             className="text-sm font-medium text-neutral-500 uppercase tracking-wider mb-6"
