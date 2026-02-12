@@ -1,9 +1,15 @@
+'use client'
+
+import { useState } from 'react'
 import { createFileRoute } from '@tanstack/react-router'
 import { Github, Linkedin, Calendar } from 'lucide-react'
+import { AnimatePresence, motion } from 'motion/react'
 import * as m from '@/paraglide/messages'
 import { LocaleSwitcher } from '@/components/LocaleSwitcher'
 import { XIcon } from '@/components/icons/XIcon'
 import { Offerings } from '@/components/Offerings'
+import { ViewToggle } from '@/components/ViewToggle'
+import { AgentView } from '@/components/AgentView'
 
 export const Route = createFileRoute('/')({
   component: Home,
@@ -29,9 +35,31 @@ const socials = [
 ]
 
 function Home() {
+  const [isAgentView, setIsAgentView] = useState(false)
+
   return (
-    <main className="min-h-screen bg-neutral-950 text-neutral-100 antialiased">
-      <div className="max-w-2xl mx-auto px-6 py-16 md:py-24">
+    <>
+      <AnimatePresence mode="wait">
+        {isAgentView ? (
+          <AgentView key="agent" />
+        ) : (
+          <HumanView key="human" />
+        )}
+      </AnimatePresence>
+      <ViewToggle isAgent={isAgentView} onToggle={() => setIsAgentView(!isAgentView)} />
+    </>
+  )
+}
+
+function HumanView() {
+  return (
+    <motion.main
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="min-h-screen bg-neutral-950 text-neutral-100 antialiased"
+    >
+      <div className="max-w-2xl mx-auto px-6 py-16 md:py-24 pb-32">
         {/* Header with locale switcher */}
         <header className="flex justify-end mb-16" role="banner">
           <nav aria-label="Language selection">
@@ -198,7 +226,7 @@ function Home() {
           </div>
         </footer>
       </div>
-    </main>
+    </motion.main>
   )
 }
 

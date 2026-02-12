@@ -19,8 +19,8 @@ export function Offerings() {
         {m.offerings_title()}
       </h2>
 
-      {/* Mobile: Tabs */}
-      <div className="md:hidden mb-6">
+      {/* Tabs */}
+      <div className="mb-6">
         <div className="flex gap-2 p-1 bg-neutral-900 rounded-lg">
           <button
             onClick={() => setActiveTab('personal')}
@@ -49,15 +49,9 @@ export function Offerings() {
         </div>
       </div>
 
-      {/* Mobile: Single card based on active tab */}
-      <div className="md:hidden">
+      {/* Single card based on active tab */}
+      <div>
         {activeTab === 'personal' ? <PersonalCard /> : <CompanyCard />}
-      </div>
-
-      {/* Desktop: Side by side */}
-      <div className="hidden md:grid md:grid-cols-2 md:gap-6">
-        <PersonalCard />
-        <CompanyCard />
       </div>
     </section>
   )
