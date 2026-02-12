@@ -3,6 +3,7 @@ import { Github, Linkedin, Calendar } from 'lucide-react'
 import * as m from '@/paraglide/messages'
 import { LocaleSwitcher } from '@/components/LocaleSwitcher'
 import { XIcon } from '@/components/icons/XIcon'
+import { Offerings } from '@/components/Offerings'
 
 export const Route = createFileRoute('/')({
   component: Home,
@@ -110,8 +111,11 @@ function Home() {
           </section>
         </article>
 
+        {/* Offerings */}
+        <Offerings />
+
         {/* Services */}
-        <section aria-labelledby="services-title">
+        <section aria-labelledby="services-title" className="mt-16">
           <h2
             id="services-title"
             className="text-sm font-medium text-neutral-500 uppercase tracking-wider mb-6"
