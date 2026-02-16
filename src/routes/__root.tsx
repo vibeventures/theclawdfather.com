@@ -279,14 +279,15 @@ function RootDocument({ children }: { children: React.ReactNode }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        {/* Plausible Analytics - privacy-friendly, no cookies */}
+        {/* Plausible Analytics - self-hosted */}
         <script
-          async
-          src="https://plausible.io/js/pa-XJag0qxDyQMHn2tOpVCvA.js"
+          defer
+          data-domain="theclawdfather.com"
+          src="https://analytics.drdrip.xyz/js/script.file-downloads.hash.outbound-links.pageview-props.revenue.tagged-events.js"
         />
         <script
           dangerouslySetInnerHTML={{
-            __html: `window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()`,
+            __html: `window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }`,
           }}
         />
       </head>
