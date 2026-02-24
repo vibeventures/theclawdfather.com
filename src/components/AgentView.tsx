@@ -91,7 +91,8 @@ Konferenz-Talks und Firmenvorträge über KI Agenten.
 - **LinkedIn:** https://www.linkedin.com/in/peetzweg/
 
 ## Neuigkeiten
-- **8. Feb 2026:** OpenClaw Berlin Meetup - https://lu.ma/3j4om77u
+- **23. Feb 2026:** OpenClaw Berlin Meetup #2 - https://x.com/peetzweg/status/2026224687605301535
+- **8. Feb 2026:** OpenClaw Berlin Meetup #1 - https://lu.ma/3j4om77u
 
 ## Strukturierte Daten (JSON-LD)
 \`\`\`json
@@ -195,7 +196,8 @@ Conference talks and company presentations about AI agents.
 - **LinkedIn:** https://www.linkedin.com/in/peetzweg/
 
 ## News
-- **Feb 8, 2026:** OpenClaw Berlin Meetup - https://lu.ma/3j4om77u
+- **Feb 23, 2026:** OpenClaw Berlin Meetup #2 - https://x.com/peetzweg/status/2026224687605301535
+- **Feb 8, 2026:** OpenClaw Berlin Meetup #1 - https://lu.ma/3j4om77u
 
 ## Structured Data (JSON-LD)
 \`\`\`json

@@ -186,9 +186,9 @@ function HumanView() {
                 rel="noopener noreferrer"
                 className="block p-4 -mx-4 rounded-lg hover:bg-neutral-900 transition-colors"
               >
-                <time className="text-sm text-neutral-500">Feb 2026</time>
+                <time className="text-sm text-neutral-500">23. Feb 2026</time>
                 <h3 className="text-neutral-100 font-medium mt-1">
-                  2. OpenClaw Berlin Event
+                  OpenClaw Berlin Meetup #2
                 </h3>
                 <p className="text-neutral-400 text-sm mt-1">
                   Zweites Community-Treffen in Berlin →
