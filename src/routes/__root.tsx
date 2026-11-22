@@ -283,7 +283,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         <script
           defer
           data-domain="theclawdfather.com"
-          src="https://analytics.drdrip.xyz/js/script.file-downloads.hash.outbound-links.pageview-props.revenue.tagged-events.js"
+          src="https://analytics.466920160.xyz/js/script.file-downloads.hash.outbound-links.pageview-props.revenue.tagged-events.js"
         />
         <script
           dangerouslySetInnerHTML={{
